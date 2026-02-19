@@ -85,6 +85,10 @@ export const ClickElementIDs = [
     "upgrade-ip-31",
 ]
 
+export const ClickElementClassNames = [
+    "exBuyableButton"
+]
+
 export const HoverElementIDs = [
     // Grass
     "tile"
