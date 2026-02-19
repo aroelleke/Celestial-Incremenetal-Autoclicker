@@ -4,7 +4,7 @@
   "description": "",
   "main": "Clicker.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "npx esbuild main.js --bundle --minify --outfile=dist/bundle.js"
   },
   "repository": {
     "type": "git",
