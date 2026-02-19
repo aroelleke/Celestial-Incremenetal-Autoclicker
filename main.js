@@ -3,7 +3,7 @@ import { Hover } from "./Hoverer"
 import { ClickElementClassNames, ClickElementIDs, HoverElementIDs } from "./data"
 
 
-const ClickerRef = new Clicker({ elementIds: ClickElementIDs, elementClasses: ClickElementClassNames })
+const ClickerRef = new Clicker({ elementIDs: ClickElementIDs, elementClasses: ClickElementClassNames })
 const HoverRef = new Hover({ elementClass: HoverElementIDs })
 
 const start = () => {
