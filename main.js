@@ -16,6 +16,8 @@ const stopAutoplay = () => {
     HoverRef.stop()
 }
 
+startAutoplay()
+
 window.startAutoplay = startAutoplay
 window.stopAutoplay = stopAutoplay
 
