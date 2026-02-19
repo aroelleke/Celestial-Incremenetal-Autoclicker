@@ -6,17 +6,17 @@ import { ClickElementClassNames, ClickElementIDs, HoverElementIDs } from "./data
 const ClickerRef = new Clicker({ elementIDs: ClickElementIDs, elementClasses: ClickElementClassNames })
 const HoverRef = new Hover({ elementClass: HoverElementIDs })
 
-const start = () => {
+const startAutoplay = () => {
     ClickerRef.start()
     HoverRef.start()
 }
 
-const stop = () => {
+const stopAutoplay = () => {
     ClickerRef.stop()
     HoverRef.stop()
 }
 
-window.start = start
-window.stop = stop
+window.startAutoplay = startAutoplay
+window.stopAutoplay = stopAutoplay
 
 console.log("Autoclicker loaded and started, enter 'stop()' in the console to stop it and 'start()' to restart it again.")
