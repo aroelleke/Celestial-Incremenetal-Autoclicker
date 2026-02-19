@@ -15,25 +15,14 @@ export class Clicker {
 
         let elementsByClass = Array.from(document.getElementsByClassName(this.ELEMENT_CLASS))
         let elementsByIds = this.ELEMENT_IDS.map((id) => document.getElementById(id))
-        
+
         let elements = elementsByClass.concat(elementsByIds)
 
-        for (let i = 0; i < elements.length; i++) {
-            let element = elements.item(i)
+        elements.forEach((element) => {
             try {
-                if (element instanceof HTMLElement) this.hover(element)
+                if (element instanceof HTMLElement) this.click(element)
             } catch (e) {
                 console.error(`Error hovering element ${element.id}:`, e)
-            }
-        }
-
-        this.ELEMENT_IDS.forEach((id) => {
-            let button = document.getElementById(id)
-
-            try {
-                if (button instanceof HTMLElement) button.click()
-            } catch (e) {
-                console.error(`Error clicking button ${button.id}:`, e)
             }
         })
 
