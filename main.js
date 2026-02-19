@@ -3,20 +3,20 @@ import { Hover } from "./Hoverer"
 import { ClickElementClassNames, ClickElementIDs, HoverElementIDs } from "./data"
 
 
-let ClickerRef = new Clicker({ elementIds: ClickElementIDs, elementClasses: ClickElementClassNames })
-let HoverRef = new Hover({elementClass: HoverElementIDs})
+const ClickerRef = new Clicker({ elementIds: ClickElementIDs, elementClasses: ClickElementClassNames })
+const HoverRef = new Hover({ elementClass: HoverElementIDs })
 
-export function start() {
+const start = () => {
     ClickerRef.start()
     HoverRef.start()
 }
 
-export function stop() {
+const stop = () => {
     ClickerRef.stop()
     HoverRef.stop()
 }
 
-window.start = start;
-window.stop = stop;
+window.start = start
+window.stop = stop
 
 console.log("Autoclicker loaded and started, enter 'stop()' in the console to stop it and 'start()' to restart it again.")
