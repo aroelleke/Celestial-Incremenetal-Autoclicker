@@ -1,10 +1,10 @@
 import { Clicker } from "./Clicker"
 import { Hover } from "./Hoverer"
-import { ClickElementIDs, HoverElementIDs } from "./data"
+import { ClickElementClassNames, ClickElementIDs, HoverElementIDs } from "./data"
 
 
-let ClickerRef = new Clicker(ClickElementIDs)
-let HoverRef = new Hover(HoverElementIDs)
+let ClickerRef = new Clicker({ elementIds: ClickElementIDs, elementClasses: ClickElementClassNames })
+let HoverRef = new Hover({elementClass: HoverElementIDs})
 
 export function start() {
     ClickerRef.start()
