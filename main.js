@@ -16,6 +16,7 @@ export function stop() {
     HoverRef.stop()
 }
 
-start()
+window.start = start;
+window.stop = stop;
 
 console.log("Autoclicker loaded and started, enter 'stop()' in the console to stop it and 'start()' to restart it again.")
