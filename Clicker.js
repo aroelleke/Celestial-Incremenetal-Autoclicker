@@ -20,7 +20,7 @@ export class Clicker {
 
         elements.forEach((element) => {
             try {
-                if (element instanceof HTMLElement) this.click(element)
+                if (element instanceof HTMLElement) element.click()
             } catch (e) {
                 console.error(`Error hovering element ${element.id}:`, e)
             }
